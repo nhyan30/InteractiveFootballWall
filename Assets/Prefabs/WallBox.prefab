@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 47fb92af0b0f02743ab07f64c7f3737d, type: 2}
     - target: {fileID: 919132149155446097, guid: 6b1a2a56daa74ae49803dfb6a6f861ef, type: 3}
       propertyPath: m_Name
-      value: CustomBox
+      value: WallBox
       objectReference: {fileID: 0}
     - target: {fileID: 2209788740957557454, guid: 6b1a2a56daa74ae49803dfb6a6f861ef, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

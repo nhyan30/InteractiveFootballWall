@@ -19,7 +19,7 @@ public class WallGenerator : MonoBehaviour
     public float maxTileHeight = 2f;
 
     [Header("References")]
-    public GameObject tilePrefab;
+    public GameObject wallBoxPrefab;
 
     private List<Rect> cells = new List<Rect>();
     private List<GameObject> allTiles = new List<GameObject>();
@@ -40,7 +40,7 @@ public class WallGenerator : MonoBehaviour
         foreach (Rect cell in cells)
         {
             Vector3 pos = new Vector3(cell.x + cell.width / 2, cell.y + cell.height / 2, 0);
-            GameObject tile = Instantiate(tilePrefab, pos, Quaternion.identity, transform);
+            GameObject tile = Instantiate(wallBoxPrefab, pos, Quaternion.identity, transform);
             tile.transform.localScale = new Vector3(cell.width, cell.height, 1f);
             allTiles.Add(tile);
         }
